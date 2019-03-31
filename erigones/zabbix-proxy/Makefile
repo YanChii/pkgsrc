@@ -55,7 +55,7 @@ post-install:
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../databases/openldap-client/buildlink3.mk"
-.include "../../security/openssl111/buildlink3.mk"
+.include "../../security/openssl/buildlink3.mk"
 .include "../../textproc/iksemel/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../www/curl/buildlink3.mk"

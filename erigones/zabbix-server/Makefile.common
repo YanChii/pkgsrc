@@ -2,8 +2,9 @@
 # used by sysutils/zabbix/Makefile
 # used by sysutils/zabbix-frontend/Makefile
 
-DISTNAME=	zabbix-4.0.4
-PKGNAME=        server-${DISTNAME}
+VER=		4.0.4
+DISTNAME=	zabbix-${VER}
+PKGNAME=        zabbix-server-${VER}
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=zabbix/}
 
@@ -11,5 +12,5 @@ MAINTAINER?=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	https://www.zabbix.com/
 LICENSE=	gnu-gpl-v2
 
-DISTINFO_FILE=	${.CURDIR}/../../sysutils/zabbix-server/distinfo
-PATCHDIR=	${.CURDIR}/../../sysutils/zabbix-server/patches
+DISTINFO_FILE=	${.CURDIR}/../../erigones/zabbix-server/distinfo
+PATCHDIR=	${.CURDIR}/../../erigones/zabbix-server/patches
