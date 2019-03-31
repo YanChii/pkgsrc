@@ -1,0 +1,21 @@
+# $NetBSD: Makefile.backend,v 1.4 2017/03/09 13:32:54 fhajny Exp $
+# used by net/powerdns-ldap/Makefile
+# used by net/powerdns-mysql/Makefile
+# used by net/powerdns-pgsql/Makefile
+
+.include "../../erigones/powerdns40/Makefile.common"
+
+DEPENDS+=		powerdns40>=${PDNS_VERSION}:../../erigones/powerdns40
+
+DISTINFO_FILE=		${.CURDIR}/../../erigones/powerdns40/distinfo
+PATCHDIR=		${.CURDIR}/../../erigones/powerdns40/patches
+
+CONFIGURE_ARGS+=	--disable-pdns_server
+CONFIGURE_ARGS+=	--with-modules=""
+
+BUILD_DIRS=		modules
+
+# These are required by configure, but not used by the modules
+BUILDLINK_DEPMETHOD.boost-headers=	build
+BUILDLINK_DEPMETHOD.boost-libs=		build
+BUILDLINK_DEPMETHOD.openssl=		build

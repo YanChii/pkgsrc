@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- src/zabbix_agent/Makefile.in.orig	2018-10-29 17:36:12.000000000 +0000
++++ src/zabbix_agent/Makefile.in
+@@ -934,7 +934,7 @@ uninstall-am: uninstall-sbinPROGRAMS
+ install-data-hook:
+ 	$(MKDIR_P) "$(DESTDIR)@AGENT_CONFIG_FILE@.d"
+ 	$(MKDIR_P) "$(DESTDIR)@LOAD_MODULE_PATH@"
+-	test -f "$(DESTDIR)@AGENT_CONFIG_FILE@" || cp "../../conf/zabbix_agentd.conf" "$(DESTDIR)@AGENT_CONFIG_FILE@"
++	cp "../../conf/zabbix_agentd.conf" "$(DESTDIR)/${PREFIX}/share/examples/zabbix"
+ 
+ # Tell versions [3.59,3.63) of GNU make to not export all variables.
+ # Otherwise a system limit (for SysV at least) may be exceeded.

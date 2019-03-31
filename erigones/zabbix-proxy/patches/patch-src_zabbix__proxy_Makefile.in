@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- src/zabbix_proxy/Makefile.in.orig	2018-10-29 17:36:12.000000000 +0000
++++ src/zabbix_proxy/Makefile.in
+@@ -1009,6 +1009,7 @@ install-data-hook:
+ 	$(MKDIR_P) "$(DESTDIR)@EXTERNAL_SCRIPTS_PATH@"
+ 	$(MKDIR_P) "$(DESTDIR)@LOAD_MODULE_PATH@"
+ 	test -f "$(DESTDIR)@PROXY_CONFIG_FILE@" || cp "../../conf/zabbix_proxy.conf" "$(DESTDIR)@PROXY_CONFIG_FILE@"
++	cp "../../conf/zabbix_proxy.conf" "$(DESTDIR)/${PREFIX}/share/examples/zabbix"
+ 
+ # Tell versions [3.59,3.63) of GNU make to not export all variables.
+ # Otherwise a system limit (for SysV at least) may be exceeded.

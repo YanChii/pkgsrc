@@ -1,0 +1,11 @@
+@comment $NetBSD$
+man/man8/zabbix_server.8
+sbin/zabbix_server
+share/examples/zabbix/zabbix_server.conf
+share/zabbix/data.sql
+share/zabbix/images.sql
+share/zabbix/schema.sql
+@pkgdir share/zabbix/externalscripts
+@pkgdir share/zabbix/alertscripts
+@pkgdir lib/modules
+@pkgdir etc/zabbix_server.conf.d
