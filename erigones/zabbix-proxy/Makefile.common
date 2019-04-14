@@ -2,7 +2,7 @@
 # used by sysutils/zabbix/Makefile
 # used by sysutils/zabbix-frontend/Makefile
 
-VER=		4.0.4
+VER=		4.0.6
 DISTNAME=	zabbix-${VER}
 PKGNAME=        zabbix-proxy-${VER}
 CATEGORIES=	sysutils

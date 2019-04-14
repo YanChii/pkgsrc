@@ -4,7 +4,7 @@ PKG_OPTIONS_VAR=		PKG_OPTIONS.zabbix
 PKG_SUPPORTED_OPTIONS+=		inet6 libssh2 snmp
 PKG_OPTIONS_OPTIONAL_GROUPS=	database
 PKG_OPTIONS_GROUP.database=	mysql pgsql sqlite3
-PKG_SUGGESTED_OPTIONS+=		libssh2 snmp pgsql
+PKG_SUGGESTED_OPTIONS+=		libssh2 snmp sqlite3
 
 .if empty(MISSING_FEATURES:Minet6)
 PKG_SUGGESTED_OPTIONS+=		inet6

@@ -1,5 +1,4 @@
 @comment $NetBSD$
-etc/zabbix_proxy.conf
 man/man8/zabbix_proxy.8
 sbin/zabbix_proxy
 share/examples/zabbix/zabbix_proxy.conf
@@ -8,4 +7,4 @@ share/zabbix/images.sql
 share/zabbix/schema.sql
 @pkgdir share/zabbix/externalscripts
 @pkgdir lib/modules
-@pkgdir etc/zabbix_proxy.conf.d
+@pkgdir etc/zabbix/zabbix_proxy.conf.d
